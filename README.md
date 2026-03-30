@@ -7,7 +7,7 @@ Local Chrome extension that blocks websites on a schedule (two windows per day, 
 1. Open Chrome → `chrome://extensions`
 2. Enable **Developer mode**
 3. Click **Load unpacked**
-4. Select this folder: `c:\Users\smsau\_chromeblock`
+4. Select this folder: `c:\Users\_chromeblock`
 
 ## Use
 
