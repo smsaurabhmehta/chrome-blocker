@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChromeBlocker Settings</title>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div>
+          <h1>ChromeBlocker</h1>
+          <p class="sub">Block sites on a schedule (two windows per day).</p>
+        </div>
+        <div class="status" id="statusBadge">—</div>
+      </header>
+
+      <section class="card">
+        <h2>Blocked sites</h2>
+        <div class="row">
+          <input id="siteInput" class="input" type="text" placeholder="e.g. reddit.com" autocomplete="off" />
+          <button id="addSiteBtn" class="btn primary">Add</button>
+        </div>
+        <div class="hint" id="siteError" hidden></div>
+        <ul id="sitesList" class="list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Schedule</h2>
+        <p class="hint">Enable days and choose two time ranges. Overnight ranges are allowed (e.g. 23:00 → 02:00).</p>
+        <div id="scheduleTable" class="schedule"></div>
+        <div class="hint" id="scheduleError" hidden></div>
+      </section>
+
+      <footer class="footer">
+        <div class="hint" id="saveHint">Changes are saved automatically.</div>
+        <button id="forceApplyBtn" class="btn">Apply now</button>
+      </footer>
+    </div>
+
+    <script src="./options.js"></script>
+  </body>
+</html>
+
