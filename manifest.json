@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "ChromeBlocker",
+  "name": "Help me Focus",
   "version": "0.1.0",
   "description": "Block websites by schedule.",
   "permissions": ["storage", "alarms", "declarativeNetRequest", "declarativeNetRequestFeedback"],
@@ -11,7 +11,7 @@
   },
   "options_page": "src/options/options.html",
   "action": {
-    "default_title": "ChromeBlocker",
+    "default_title": "Help me Focus",
     "default_popup": "src/popup/popup.html"
   }
 }
